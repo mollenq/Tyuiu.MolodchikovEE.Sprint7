@@ -25,7 +25,6 @@ namespace Tyuiu.MolodchikovEE.Sprint7.Project.V3
             buttonAddSubject_MEE.Enabled = false;
             comboBoxGroup_MEE.SelectedIndexChanged += comboBoxGroup_SelectedIndexChanged;
             buttonDeleteSubject_MEE.Click += buttonDeleteSubject_MEE_Click;
-
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -143,6 +142,7 @@ namespace Tyuiu.MolodchikovEE.Sprint7.Project.V3
 
         private void LoadCsvToDataGridView(string filePath)
         {
+            currentFilePath = filePath;
             try
             {
                 DataTable csvData = new DataTable();
